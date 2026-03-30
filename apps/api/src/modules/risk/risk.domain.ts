@@ -26,21 +26,26 @@ export function calculateRiskAssessment(
 ): RiskAssessmentResult {
   const deterministic = buildDeterministicForecast(movements, settings);
   const thresholds: Horizon[] = [30, 60, 90];
-  const outcome = new Map<Horizon, number[]>();
+  const endBalanceOutcome = new Map<Horizon, number[]>();
+  const minimumBalanceOutcome = new Map<Horizon, number[]>();
   const minimums: number[] = [];
-  thresholds.forEach((horizon) => outcome.set(horizon, []));
+  thresholds.forEach((horizon) => {
+    endBalanceOutcome.set(horizon, []);
+    minimumBalanceOutcome.set(horizon, []);
+  });
 
   for (let run = 0; run < runs; run += 1) {
     const simulated = simulateMovements(movements, seed + run);
     const forecast = buildDeterministicForecast(simulated, settings);
     minimums.push(forecast.minimumBalance);
     thresholds.forEach((horizon) => {
-      outcome.get(horizon)?.push(forecast.projectedBalances[horizon]);
+      endBalanceOutcome.get(horizon)?.push(forecast.projectedBalances[horizon]);
+      minimumBalanceOutcome.get(horizon)?.push(minimumBalanceWithinHorizon(forecast, horizon));
     });
   }
 
   const summary = thresholds.map((horizon) => {
-    const values = outcome.get(horizon) ?? [];
+    const values = minimumBalanceOutcome.get(horizon) ?? [];
     const tensionThreshold = toNumber(settings.tensionThresholdAmount);
     const tensionProbability = probability(values, (value) => value <= tensionThreshold);
     const breakProbability = probability(values, (value) => value < 0);
@@ -55,9 +60,9 @@ export function calculateRiskAssessment(
   return {
     summary,
     balanceRanges: {
-      30: percentileRange(outcome.get(30) ?? []),
-      60: percentileRange(outcome.get(60) ?? []),
-      90: percentileRange(outcome.get(90) ?? []),
+      30: percentileRange(endBalanceOutcome.get(30) ?? []),
+      60: percentileRange(endBalanceOutcome.get(60) ?? []),
+      90: percentileRange(endBalanceOutcome.get(90) ?? []),
     },
     minimumBalanceDistribution: minimums,
     drivers: explainDrivers(movements, deterministic),
@@ -107,6 +112,21 @@ function percentileRange(values: number[]) {
     p50: percentile(sorted, 0.5),
     p90: percentile(sorted, 0.9),
   };
+}
+
+function minimumBalanceWithinHorizon(
+  forecast: ReturnType<typeof buildDeterministicForecast>,
+  horizon: Horizon,
+) {
+  const timelineSlice = forecast.timeline.slice(0, Math.min(horizon + 1, forecast.timeline.length));
+  if (timelineSlice.length === 0) return forecast.currentCashBalance;
+
+  const minimumBalance = timelineSlice.reduce(
+    (currentMinimum, point) => Math.min(currentMinimum, point.balance),
+    forecast.currentCashBalance,
+  );
+
+  return Number(minimumBalance.toFixed(2));
 }
 
 function percentile(values: number[], pct: number) {
