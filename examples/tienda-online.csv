@@ -1,0 +1,135 @@
+fecha,tipo,descripcion,monto,categoria
+2026-01-02,ingreso,Venta online producto A,145,Ventas
+2026-01-02,ingreso,Venta online producto B,89,Ventas
+2026-01-02,ingreso,Venta online paquete combo,234,Ventas
+2026-01-02,egreso,Coste mercancía,120,Inventario
+2026-01-02,egreso,Alquiler almacén,600,Inmueble
+2026-01-03,ingreso,Venta tienda física,450,Ventas
+2026-01-03,ingreso,Venta online producto A,145,Ventas
+2026-01-03,ingreso,Venta online producto C,67,Ventas
+2026-01-03,egreso,Coste mercancía,150,Inventario
+2026-01-03,egreso,Nóminas dependientes,800,Recursos Humanos
+2026-01-04,ingreso,Venta online producto B,89,Ventas
+2026-01-04,ingreso,Venta online producto B,89,Ventas
+2026-01-04,ingreso,Venta tienda física,320,Ventas
+2026-01-04,egreso,Coste mercancía,100,Inventario
+2026-01-05,ingreso,Venta online paquete combo,234,Ventas
+2026-01-05,ingreso,Venta online producto A,145,Ventas
+2026-01-05,ingreso,Venta tienda física,280,Ventas
+2026-01-05,egreso,Servicios (luz, agua, internet),250,Servicios
+2026-01-06,ingreso,Venta online producto A,145,Ventas
+2026-01-06,ingreso,Venta online producto C,67,Ventas
+2026-01-06,egreso,Coste mercancía,140,Inventario
+2026-01-07,ingreso,Venta tienda física,420,Ventas
+2026-01-07,ingreso,Venta online producto B,89,Ventas
+2026-01-07,egreso,Nóminas dependientes,800,Recursos Humanos
+2026-01-08,ingreso,Venta online producto A,145,Ventas
+2026-01-08,ingreso,Venta online paquete combo,234,Ventas
+2026-01-08,ingreso,Venta tienda física,390,Ventas
+2026-01-08,egreso,Coste mercancía,160,Inventario
+2026-01-09,ingreso,Venta online producto B,89,Ventas
+2026-01-09,ingreso,Venta online producto C,67,Ventas
+2026-01-10,ingreso,Venta tienda física,500,Ventas
+2026-01-10,ingreso,Venta online producto A,145,Ventas
+2026-01-10,egreso,Alquiler almacén,600,Inmueble
+2026-01-10,egreso,Coste mercancía,170,Inventario
+2026-01-11,ingreso,Venta online paquete combo,234,Ventas
+2026-01-11,ingreso,Venta online producto B,89,Ventas
+2026-01-11,egreso,Servicios (luz, agua, internet),250,Servicios
+2026-01-12,ingreso,Venta tienda física,450,Ventas
+2026-01-12,ingreso,Venta online producto A,145,Ventas
+2026-01-12,egreso,Nóminas dependientes,800,Recursos Humanos
+2026-01-12,egreso,Coste mercancía,120,Inventario
+2026-01-13,ingreso,Venta online producto C,67,Ventas
+2026-01-13,ingreso,Venta online producto B,89,Ventas
+2026-01-14,ingreso,Venta tienda física,380,Ventas
+2026-01-14,ingreso,Venta online paquete combo,234,Ventas
+2026-01-14,egreso,Coste mercancía,130,Inventario
+2026-01-15,ingreso,Venta online producto A,145,Ventas
+2026-01-15,ingreso,Venta online producto B,89,Ventas
+2026-01-15,egreso,Alquiler almacén,600,Inmueble
+2026-01-15,egreso,Servicios (luz, agua, internet),250,Servicios
+2026-01-16,ingreso,Venta tienda física,520,Ventas
+2026-01-16,ingreso,Venta online producto C,67,Ventas
+2026-01-16,egreso,Nóminas dependientes,800,Recursos Humanos
+2026-01-17,ingreso,Venta online paquete combo,234,Ventas
+2026-01-17,ingreso,Venta online producto A,145,Ventas
+2026-01-17,egreso,Coste mercancía,150,Inventario
+2026-01-18,ingreso,Venta online producto B,89,Ventas
+2026-01-18,ingreso,Venta tienda física,410,Ventas
+2026-02-01,ingreso,Venta online producto A,145,Ventas
+2026-02-01,ingreso,Venta tienda física,450,Ventas
+2026-02-01,egreso,Alquiler almacén,600,Inmueble
+2026-02-01,egreso,Coste mercancía,120,Inventario
+2026-02-02,ingreso,Venta online paquete combo,234,Ventas
+2026-02-02,ingreso,Venta online producto B,89,Ventas
+2026-02-02,egreso,Servicios (luz, agua, internet),250,Servicios
+2026-02-03,ingreso,Venta tienda física,380,Ventas
+2026-02-03,ingreso,Venta online producto C,67,Ventas
+2026-02-03,egreso,Nóminas dependientes,800,Recursos Humanos
+2026-02-04,ingreso,Venta online producto A,145,Ventas
+2026-02-04,ingreso,Venta online producto B,89,Ventas
+2026-02-04,egreso,Coste mercancía,110,Inventario
+2026-02-05,ingreso,Venta tienda física,520,Ventas
+2026-02-05,ingreso,Venta online paquete combo,234,Ventas
+2026-02-05,egreso,Coste mercancía,140,Inventario
+2026-02-06,ingreso,Venta online producto C,67,Ventas
+2026-02-06,ingreso,Venta online producto A,145,Ventas
+2026-02-07,ingreso,Venta tienda física,450,Ventas
+2026-02-07,ingreso,Venta online producto B,89,Ventas
+2026-02-07,egreso,Alquiler almacén,600,Inmueble
+2026-02-08,ingreso,Venta online paquete combo,234,Ventas
+2026-02-08,egreso,Servicios (luz, agua, internet),250,Servicios
+2026-02-09,ingreso,Venta tienda física,490,Ventas
+2026-02-09,ingreso,Venta online producto A,145,Ventas
+2026-02-09,egreso,Nóminas dependientes,800,Recursos Humanos
+2026-02-10,ingreso,Venta online producto B,89,Ventas
+2026-02-10,ingreso,Venta online producto C,67,Ventas
+2026-02-10,egreso,Coste mercancía,130,Inventario
+2026-02-11,ingreso,Venta tienda física,420,Ventas
+2026-02-11,ingreso,Venta online paquete combo,234,Ventas
+2026-02-12,ingreso,Venta online producto A,145,Ventas
+2026-02-12,egreso,Alquiler almacén,600,Inmueble
+2026-02-13,ingreso,Venta tienda física,510,Ventas
+2026-02-13,ingreso,Venta online producto B,89,Ventas
+2026-02-13,egreso,Coste mercancía,160,Inventario
+2026-02-14,ingreso,Venta online producto C,67,Ventas
+2026-02-14,ingreso,Venta online paquete combo,234,Ventas
+2026-02-14,egreso,Servicios (luz, agua, internet),250,Servicios
+2026-02-15,ingreso,Venta tienda física,480,Ventas
+2026-02-15,ingreso,Venta online producto A,145,Ventas
+2026-02-15,egreso,Nóminas dependientes,800,Recursos Humanos
+2026-02-16,ingreso,Venta online producto B,89,Ventas
+2026-02-17,ingreso,Venta tienda física,440,Ventas
+2026-02-17,ingreso,Venta online paquete combo,234,Ventas
+2026-02-17,egreso,Coste mercancía,140,Inventario
+2026-03-01,ingreso,Venta tienda física PRE-DESCUENTO,850,Ventas
+2026-03-01,ingreso,Venta online DESCUENTO MARZO,567,Ventas
+2026-03-01,egreso,Alquiler almacén,600,Inmueble
+2026-03-01,egreso,Coste mercancía,280,Inventario
+2026-03-02,ingreso,Venta tienda física,920,Ventas
+2026-03-02,ingreso,Venta online producto A,145,Ventas
+2026-03-02,ingreso,Venta online paquete combo,234,Ventas
+2026-03-02,egreso,Servicios (luz, agua, internet),250,Servicios
+2026-03-03,ingreso,Venta tienda física,1100,Ventas
+2026-03-03,ingreso,Venta online producto B,89,Ventas
+2026-03-03,egreso,Nóminas dependientes,1200,Recursos Humanos
+2026-03-04,ingreso,Venta tienda física,950,Ventas
+2026-03-04,ingreso,Venta online paquete combo,234,Ventas
+2026-03-04,egreso,Coste mercancía,300,Inventario
+2026-03-05,ingreso,Venta online DESCUENTO MARZO,567,Ventas
+2026-03-05,ingreso,Venta tienda física PRE-DESCUENTO,890,Ventas
+2026-03-05,egreso,Coste mercancía,250,Inventario
+2026-03-06,ingreso,Venta tienda física,1050,Ventas
+2026-03-06,ingreso,Venta online producto C,67,Ventas
+2026-03-07,ingreso,Venta tienda física,920,Ventas
+2026-03-07,ingreso,Venta online paquete combo,234,Ventas
+2026-03-07,egreso,Alquiler almacén,600,Inmueble
+2026-03-08,ingreso,Venta online DESCUENTO MARZO,567,Ventas
+2026-03-08,egreso,Servicios (luz, agua, internet),250,Servicios
+2026-03-09,ingreso,Venta tienda física,1000,Ventas
+2026-03-09,ingreso,Venta online producto A,145,Ventas
+2026-03-09,egreso,Nóminas dependientes,1200,Recursos Humanos
+2026-03-10,ingreso,Venta tienda física,880,Ventas
+2026-03-10,ingreso,Venta online paquete combo,234,Ventas
+2026-03-10,egreso,Coste mercancía,270,Inventario

@@ -4,22 +4,28 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "next dev --port 3001",
+    "dev": "next dev --port 3000",
     "build": "next build",
     "start": "next start",
     "lint": "eslint --max-warnings 0",
-    "check-types": "next typegen && tsc --noEmit"
+    "check-types": "next typegen && tsc --noEmit",
+    "test": "echo \"No frontend tests yet\""
   },
   "dependencies": {
-    "@repo/ui": "workspace:*",
+    "@repo/shared": "workspace:*",
+    "@tanstack/react-query": "^5.90.5",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.546.0",
     "next": "16.2.0",
+    "recharts": "^3.2.1",
     "react": "^19.2.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "react-hook-form": "^7.65.0",
+    "zustand": "^5.0.8"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^16.2.0",
     "@repo/eslint-config": "workspace:*",
-    "@repo/tailwind-config": "workspace:*",
     "@repo/typescript-config": "workspace:*",
     "@tailwindcss/postcss": "^4.1.5",
     "@types/node": "^22.15.30",

@@ -1,0 +1,94 @@
+fecha,tipo,descripcion,monto,categoria
+2026-01-02,ingreso,Venta productos,3500,Ventas
+2026-01-02,egreso,Alquiler local,1200,Inmueble
+2026-01-02,egreso,Nóminas,2800,Recursos Humanos
+2026-01-02,egreso,"Servicios (luz, agua)",300,Servicios
+2026-01-03,ingreso,Venta productos,3200,Ventas
+2026-01-03,egreso,Compra inventario,1500,Inventario
+2026-01-04,ingreso,Venta productos,2800,Ventas
+2026-01-04,egreso,Impuestos,800,Impuestos
+2026-01-05,ingreso,Venta productos,2100,Ventas
+2026-01-06,ingreso,Venta productos,1800,Ventas
+2026-01-06,egreso,Compra inventario,2000,Inventario
+2026-01-07,ingreso,Reembolso cliente,500,Devoluciones
+2026-01-08,ingreso,Venta productos,1500,Ventas
+2026-01-09,egreso,Publicidad (reducido),400,Marketing
+2026-01-10,ingreso,Venta productos,1200,Ventas
+2026-01-10,egreso,Nóminas,2800,Recursos Humanos
+2026-01-11,ingreso,Venta productos,900,Ventas
+2026-01-12,egreso,"Servicios (luz, agua)",300,Servicios
+2026-01-13,ingreso,Venta productos,800,Ventas
+2026-01-14,ingreso,Venta productos,600,Ventas
+2026-01-15,egreso,Alquiler local,1200,Inmueble
+2026-01-15,egreso,Nóminas,2800,Recursos Humanos
+2026-01-16,ingreso,Venta productos,500,Ventas
+2026-01-16,egreso,Compra inventario,1000,Inventario
+2026-01-17,ingreso,Venta productos,300,Ventas
+2026-01-18,egreso,"Servicios (luz, agua)",300,Servicios
+2026-01-19,ingreso,Venta productos,200,Ventas
+2026-01-20,egreso,Comisión empleados,600,Recursos Humanos
+2026-01-21,ingreso,Venta productos,100,Ventas
+2026-01-22,egreso,Nóminas,2800,Recursos Humanos
+2026-01-23,egreso,"Servicios (luz, agua)",300,Servicios
+2026-01-24,ingreso,Devolución inventario,800,Devoluciones
+2026-01-25,egreso,Alquiler local,1200,Inmueble
+2026-01-25,egreso,Nóminas,2800,Recursos Humanos
+2026-01-26,egreso,Deuda contraída,3000,Obligaciones
+2026-01-27,egreso,Impuestos vencidos,2500,Impuestos
+2026-01-28,egreso,"Servicios (luz, agua)",300,Servicios
+2026-01-29,egreso,Nóminas,2800,Recursos Humanos
+2026-01-30,egreso,"Préstamo a corto plazo",5000,Obligaciones
+2026-02-01,ingreso,Micro venta,50,Ventas
+2026-02-02,egreso,Alquiler local,1200,Inmueble
+2026-02-02,egreso,Nóminas,2800,Recursos Humanos
+2026-02-03,egreso,"Servicios (luz, agua)",300,Servicios
+2026-02-04,ingreso,Venta productos,75,Ventas
+2026-02-05,egreso,Intereses préstamo,450,Obligaciones
+2026-02-06,egreso,Nóminas,2800,Recursos Humanos
+2026-02-07,ingreso,Venta productos,100,Ventas
+2026-02-08,egreso,"Servicios (luz, agua)",300,Servicios
+2026-02-09,egreso,Alquiler local,1200,Inmueble
+2026-02-10,egreso,Nóminas,2800,Recursos Humanos
+2026-02-11,ingreso,Venta productos,50,Ventas
+2026-02-12,egreso,"Servicios (luz, agua)",300,Servicios
+2026-02-13,egreso,Intereses préstamo,450,Obligaciones
+2026-02-14,egreso,Nóminas,2800,Recursos Humanos
+2026-02-15,ingreso,Anticipo cliente,1000,Ventas
+2026-02-16,egreso,Alquiler local,1200,Inmueble
+2026-02-17,egreso,"Servicios (luz, agua)",300,Servicios
+2026-02-18,egreso,Nóminas,2800,Recursos Humanos
+2026-02-19,egreso,Amortización deuda,2000,Obligaciones
+2026-02-20,egreso,"Servicios (luz, agua)",300,Servicios
+2026-02-21,egreso,"Pago reducido a proveedores",500,Proveedores
+2026-02-22,ingreso,Venta productos,150,Ventas
+2026-02-23,egreso,Nóminas reducidas,1400,Recursos Humanos
+2026-02-24,egreso,"Servicios (luz, agua)",300,Servicios
+2026-02-25,egreso,Alquiler local,1200,Inmueble
+2026-02-26,egreso,Nóminas reducidas,1400,Recursos Humanos
+2026-02-27,egreso,Intereses préstamo,450,Obligaciones
+2026-02-28,ingreso,Devolución de cliente,300,Devoluciones
+2026-03-01,egreso,"Servicios (luz, agua)",300,Servicios
+2026-03-02,egreso,Alquiler local,1200,Inmueble
+2026-03-02,egreso,Nóminas reducidas,1400,Recursos Humanos
+2026-03-03,ingreso,Micro venta,100,Ventas
+2026-03-04,egreso,"Servicios (luz, agua)",300,Servicios
+2026-03-05,egreso,Nóminas reducidas,1400,Recursos Humanos
+2026-03-06,egreso,Intereses préstamo,450,Obligaciones
+2026-03-07,ingreso,Venta productos,75,Ventas
+2026-03-08,egreso,"Servicios (luz, agua)",300,Servicios
+2026-03-09,egreso,Alquiler local,1200,Inmueble
+2026-03-10,egreso,Nóminas reducidas,1400,Recursos Humanos
+2026-03-11,egreso,"Servicios (luz, agua)",300,Servicios
+2026-03-12,egreso,Cuota impuestos atrasados,1500,Impuestos
+2026-03-13,ingreso,Venta productos,50,Ventas
+2026-03-14,egreso,Nóminas reducidas,1400,Recursos Humanos
+2026-03-15,egreso,Alquiler local,1200,Inmueble
+2026-03-16,egreso,"Servicios (luz, agua)",300,Servicios
+2026-03-17,egreso,Intereses préstamo,450,Obligaciones
+2026-03-18,ingreso,Venta última,100,Ventas
+2026-03-19,egreso,"Servicios (luz, agua)",300,Servicios
+2026-03-20,egreso,Nóminas reducidas,1400,Recursos Humanos
+2026-03-21,egreso,"Servicios (luz, agua)",300,Servicios
+2026-03-22,egreso,Alquiler local,1200,Inmueble
+2026-03-23,egreso,Nóminas reducidas,1400,Recursos Humanos
+2026-03-24,ingreso,Devolución cliente,200,Devoluciones

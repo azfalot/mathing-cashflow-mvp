@@ -1,0 +1,110 @@
+fecha,tipo,descripcion,monto,categoria
+2026-01-02,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-01-02,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-01-02,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-01-02,egreso,"AWS/Infraestructura cloud",800,Infraestructura
+2026-01-02,egreso,Nóminas equipo dev,3500,Recursos Humanos
+2026-01-02,egreso,Oficina compartida,400,Inmueble
+2026-01-05,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-01-05,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-01-05,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-01-05,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-01-05,egreso,"AWS/Infraestructura cloud",850,Infraestructura
+2026-01-05,egreso,Software licenses,300,Servicios
+2026-01-08,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-01-08,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-01-08,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-01-08,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-01-08,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-01-08,egreso,Nóminas equipo dev,3500,Recursos Humanos
+2026-01-10,ingreso,Nuevo cliente Enterprise (anual),15000,Suscripciones
+2026-01-10,egreso,"AWS/Infraestructura cloud",900,Infraestructura
+2026-01-12,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-01-12,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-01-12,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-01-12,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-01-12,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-01-12,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-01-15,egreso,Nóminas equipo dev,3500,Recursos Humanos
+2026-01-15,egreso,Marketing digital,1000,Marketing
+2026-01-15,egreso,Oficina compartida,400,Inmueble
+2026-01-18,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-01-18,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-01-18,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-01-18,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-01-18,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-01-20,egreso,"AWS/Infraestructura cloud",950,Infraestructura
+2026-01-22,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-01-22,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-01-22,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-01-22,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-01-22,ingreso,Consultoría implementación,3000,Servicios
+2026-01-25,egreso,Nóminas equipo dev,3500,Recursos Humanos
+2026-01-25,egreso,Oficina compartida,400,Inmueble
+2026-01-28,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-01-28,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-01-28,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-02-01,egreso,"AWS/Infraestructura cloud",1000,Infraestructura
+2026-02-02,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-02-02,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-02-02,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-02-02,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-02-02,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-02-05,egreso,Nóminas equipo dev,3500,Recursos Humanos
+2026-02-05,egreso,Marketing digital,1500,Marketing
+2026-02-05,egreso,Oficina compartida,400,Inmueble
+2026-02-08,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-02-08,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-02-08,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-02-08,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-02-08,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-02-08,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-02-10,egreso,"AWS/Infraestructura cloud",1050,Infraestructura
+2026-02-12,ingreso,Nuevo cliente Enterprise (anual),15000,Suscripciones
+2026-02-12,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-02-12,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-02-15,egreso,Nóminas equipo dev,4500,Recursos Humanos
+2026-02-15,egreso,Oficina compartida,400,Inmueble
+2026-02-18,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-02-18,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-02-18,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-02-18,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-02-20,egreso,"AWS/Infraestructura cloud",1100,Infraestructura
+2026-02-22,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-02-22,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-02-22,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-02-22,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-02-22,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-02-25,egreso,Nóminas equipo dev,4500,Recursos Humanos
+2026-02-25,egreso,Marketing digital,2000,Marketing
+2026-02-25,egreso,Oficina compartida,500,Inmueble
+2026-02-28,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-02-28,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-02-28,ingreso,Consultoría implementación,5000,Servicios
+2026-03-02,egreso,"AWS/Infraestructura cloud",1150,Infraestructura
+2026-03-05,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-03-05,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-03-05,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-03-05,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-03-05,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-03-05,egreso,Nóminas equipo dev,4500,Recursos Humanos
+2026-03-05,egreso,Oficina compartida,500,Inmueble
+2026-03-08,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-03-08,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-03-08,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-03-08,ingreso,Consultoría implementación,3000,Servicios
+2026-03-10,egreso,"AWS/Infraestructura cloud",1200,Infraestructura
+2026-03-12,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-03-12,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-03-12,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-03-12,ingreso,""Suscripción cliente Startup,99,Suscripciones
+2026-03-15,egreso,Nóminas equipo dev,5000,Recursos Humanos
+2026-03-15,egreso,Marketing digital,2500,Marketing
+2026-03-15,egreso,Oficina compartida,500,Inmueble
+2026-03-18,ingreso,Nuevo cliente Enterprise (anual),15000,Suscripciones
+2026-03-18,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-03-20,egreso,"AWS/Infraestructura cloud",1250,Infraestructura
+2026-03-22,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-03-22,ingreso,""Suscripción cliente Enterprise,2500,Suscripciones
+2026-03-22,ingreso,""Suscripción cliente Pro,499,Suscripciones
+2026-03-24,ingreso,""Suscripción cliente Startup,99,Suscripciones

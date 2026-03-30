@@ -1,3 +1,7 @@
 packages:
-  - "apps/*"
-  - "packages/*"
+  - "apps/web"
+  - "apps/api"
+  - "packages/shared"
+  - "packages/eslint-config"
+  - "packages/tailwind-config"
+  - "packages/typescript-config"

@@ -1,0 +1,225 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  ANALYST
+}
+
+enum SourceType {
+  CSV
+  ERP
+  BANK
+  MANUAL
+  API
+}
+
+enum ImportStatus {
+  PENDING
+  COMPLETED
+  FAILED
+  PARTIAL
+}
+
+enum MovementType {
+  INFLOW
+  OUTFLOW
+}
+
+enum MovementStatus {
+  REALIZED
+  PENDING
+  FORECAST
+}
+
+enum RiskLevel {
+  LOW
+  MEDIUM
+  HIGH
+  CRITICAL
+}
+
+model User {
+  id           String       @id @default(cuid())
+  email        String       @unique
+  passwordHash String
+  fullName     String
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+  memberships  Membership[]
+}
+
+model Organization {
+  id              String               @id @default(cuid())
+  name            String
+  createdAt       DateTime             @default(now())
+  updatedAt       DateTime             @updatedAt
+  memberships     Membership[]
+  profile         OrganizationProfile?
+  settings        OrganizationSettings?
+  dataSources     DataSource[]
+  movements       FinancialMovement[]
+  snapshots       CashPositionSnapshot[]
+  assessments     RiskAssessment[]
+  scenarios       ScenarioSimulation[]
+  externalSignals ExternalSignal[]
+}
+
+model Membership {
+  id             String       @id @default(cuid())
+  userId         String
+  organizationId String
+  role           Role
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+  user           User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  organization   Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, organizationId])
+}
+
+model OrganizationProfile {
+  id                 String       @id @default(cuid())
+  organizationId     String       @unique
+  sector             String?
+  currency           String
+  country            String
+  fiscalCalendarType String
+  createdAt          DateTime     @default(now())
+  updatedAt          DateTime     @updatedAt
+  organization       Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+}
+
+model OrganizationSettings {
+  id                     String       @id @default(cuid())
+  organizationId         String       @unique
+  tensionThresholdAmount Decimal      @db.Decimal(14, 2)
+  tensionThresholdDays   Int          @default(14)
+  monteCarloRuns         Int          @default(1000)
+  defaultCurrency        String       @default("EUR")
+  createdAt              DateTime     @default(now())
+  updatedAt              DateTime     @updatedAt
+  organization           Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+}
+
+model DataSource {
+  id                String              @id @default(cuid())
+  organizationId    String
+  sourceType        SourceType
+  sourceName        String
+  importType        String
+  importStatus      ImportStatus
+  importedAt        DateTime?
+  rawFilename       String?
+  rowsTotal         Int                 @default(0)
+  rowsValid         Int                 @default(0)
+  rowsInvalid       Int                 @default(0)
+  missingFieldsJson Json?
+  categorySummary   Json?
+  createdAt         DateTime            @default(now())
+  updatedAt         DateTime            @updatedAt
+  organization      Organization        @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  movements         FinancialMovement[]
+  rowErrors         ImportRowError[]
+}
+
+model ImportRowError {
+  id           String     @id @default(cuid())
+  dataSourceId String
+  rowNumber    Int
+  rawRow       Json
+  messages     Json
+  createdAt    DateTime   @default(now())
+  dataSource   DataSource @relation(fields: [dataSourceId], references: [id], onDelete: Cascade)
+}
+
+model FinancialMovement {
+  id                String         @id @default(cuid())
+  organizationId    String
+  sourceId          String?
+  movementType      MovementType
+  status            MovementStatus
+  occurredAt        DateTime?
+  dueDate           DateTime?
+  amount            Decimal        @db.Decimal(14, 2)
+  currency          String
+  category          String
+  subcategory       String?
+  counterparty      String?
+  description       String?
+  recurrenceGroupId String?
+  confidenceScore   Float?
+  rawReference      String?
+  duplicateHash     String?
+  createdAt         DateTime       @default(now())
+  updatedAt         DateTime       @updatedAt
+  organization      Organization   @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  source            DataSource?    @relation(fields: [sourceId], references: [id], onDelete: SetNull)
+
+  @@index([organizationId, status])
+  @@index([organizationId, dueDate])
+}
+
+model CashPositionSnapshot {
+  id                    String       @id @default(cuid())
+  organizationId        String
+  snapshotDate          DateTime
+  currentCashBalance    Decimal      @db.Decimal(14, 2)
+  projectedCashBalance30d Decimal    @db.Decimal(14, 2)
+  projectedCashBalance60d Decimal    @db.Decimal(14, 2)
+  projectedCashBalance90d Decimal    @db.Decimal(14, 2)
+  minProjectedBalance90d Decimal     @db.Decimal(14, 2)
+  createdAt             DateTime     @default(now())
+  organization          Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+}
+
+model RiskAssessment {
+  id                     String       @id @default(cuid())
+  organizationId         String
+  assessmentDate         DateTime
+  riskHorizonDays        Int
+  cashTensionProbability Float
+  cashBreakProbability   Float
+  riskLevel              RiskLevel
+  primaryDriversJson     Json
+  recommendationsJson    Json
+  resultsJson            Json?
+  createdAt              DateTime     @default(now())
+  organization           Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+}
+
+model ScenarioSimulation {
+  id                     String       @id @default(cuid())
+  organizationId         String
+  name                   String
+  description            String?
+  baseAssessmentId       String?
+  scenarioParametersJson Json
+  resultsJson            Json?
+  createdAt              DateTime     @default(now())
+  updatedAt              DateTime     @updatedAt
+  organization           Organization @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+}
+
+model ExternalSignal {
+  id             String       @id @default(cuid())
+  organizationId String?
+  signalType     String
+  sourceName     String
+  signalDate     DateTime
+  geography      String?
+  sector         String?
+  title          String
+  description    String?
+  sentimentScore Float?
+  impactScore    Float?
+  metadataJson   Json?
+  createdAt      DateTime     @default(now())
+  organization   Organization? @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+}

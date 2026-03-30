@@ -1,0 +1,6 @@
+dueDate,amount,movementType,status,currency,category,counterparty,description
+2026-04-30,12000,INFLOW,FORECAST,EUR,SALES,Objetivo pipeline abril,Forecast comercial
+2026-05-18,4200,OUTFLOW,FORECAST,EUR,MARKETING,Campaña generación demanda,Gasto de marketing
+2026-05-31,14000,INFLOW,FORECAST,EUR,SALES,Objetivo pipeline mayo,Forecast comercial
+2026-06-12,4800,OUTFLOW,FORECAST,EUR,SUBSCRIPTION,Renovaciones software,Licencias
+2026-06-28,14500,INFLOW,FORECAST,EUR,SALES,Objetivo pipeline junio,Forecast comercial

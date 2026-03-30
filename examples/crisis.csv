@@ -1,0 +1,21 @@
+fecha,tipo,descripcion,monto,categoria
+2026-01-02,ingreso,Venta productos,3500,Ventas
+2026-01-02,egreso,Alquiler local,1200,Inmueble
+2026-01-02,egreso,Nominas,2800,Recursos Humanos
+2026-01-02,egreso,"Servicios (luz, agua)",300,Servicios
+2026-01-03,ingreso,Venta productos,3200,Ventas
+2026-01-03,egreso,Compra inventario,1500,Inventario
+2026-01-04,ingreso,Venta productos,2800,Ventas
+2026-01-04,egreso,Impuestos,800,Impuestos
+2026-01-05,ingreso,Venta productos,2100,Ventas
+2026-01-06,ingreso,Venta productos,1800,Ventas
+2026-01-06,egreso,Compra inventario,2000,Inventario
+2026-01-07,ingreso,Reembolso cliente,500,Devoluciones
+2026-01-08,ingreso,Venta productos,1500,Ventas
+2026-01-09,egreso,Publicidad reducida,400,Marketing
+2026-01-10,ingreso,Venta productos,1200,Ventas
+2026-01-10,egreso,Nominas,2800,Recursos Humanos
+2026-01-11,ingreso,Venta productos,900,Ventas
+2026-01-12,egreso,"Servicios (luz, agua)",300,Servicios
+2026-01-13,ingreso,Venta productos,800,Ventas
+2026-01-14,egreso,Proveedores vencidos,2600,Inventario

@@ -1,0 +1,43 @@
+export const CATEGORY_CATALOG = [
+  "SALES",
+  "SERVICES",
+  "PAYROLL",
+  "TAX",
+  "RENT",
+  "SUBSCRIPTION",
+  "SUPPLIER",
+  "MARKETING",
+  "OPERATIONS",
+  "CAPEX",
+  "DEBT",
+  "OTHER",
+] as const;
+
+export type CategoryCode = (typeof CATEGORY_CATALOG)[number];
+
+export const DEFAULT_CATEGORY_MAP: Record<string, CategoryCode> = {
+  ventas: "SALES",
+  sales: "SALES",
+  ingresos: "SALES",
+  servicios: "SERVICES",
+  services: "SERVICES",
+  payroll: "PAYROLL",
+  nomina: "PAYROLL",
+  salarios: "PAYROLL",
+  tax: "TAX",
+  impuestos: "TAX",
+  alquiler: "RENT",
+  rent: "RENT",
+  suscripcion: "SUBSCRIPTION",
+  subscription: "SUBSCRIPTION",
+  supplier: "SUPPLIER",
+  proveedor: "SUPPLIER",
+  marketing: "MARKETING",
+  operaciones: "OPERATIONS",
+  operations: "OPERATIONS",
+  capex: "CAPEX",
+  inversión: "CAPEX",
+  inversion: "CAPEX",
+  deuda: "DEBT",
+  debt: "DEBT",
+};

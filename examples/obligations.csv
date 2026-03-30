@@ -1,0 +1,7 @@
+dueDate,amount,movementType,status,currency,category,counterparty,description
+2026-04-02,14500,OUTFLOW,PENDING,EUR,PAYROLL,Nóminas marzo,Nóminas
+2026-04-08,13000,OUTFLOW,PENDING,EUR,SUPPLIER,Proveedor acero,Compra de stock
+2026-04-15,16000,INFLOW,PENDING,EUR,SALES,Cliente Atlas,Factura pendiente
+2026-04-18,22000,INFLOW,PENDING,EUR,SALES,Cliente Norte,Cobro grande con riesgo de retraso
+2026-05-05,11200,OUTFLOW,PENDING,EUR,TAX,Hacienda,Liquidación impuestos
+2026-05-27,21000,OUTFLOW,PENDING,EUR,CAPEX,Maquinaria,Pago de inversión

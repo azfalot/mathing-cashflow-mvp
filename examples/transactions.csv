@@ -1,0 +1,7 @@
+date,amount,movementType,status,currency,category,counterparty,description
+2026-01-08,28000,INFLOW,REALIZED,EUR,SALES,Cliente Norte,Ingreso cobrado
+2026-01-14,14000,OUTFLOW,REALIZED,EUR,PAYROLL,Nóminas,Gasto pagado
+2026-02-05,22000,INFLOW,REALIZED,EUR,SERVICES,Grupo Delta,Ingreso cobrado
+2026-02-12,9000,OUTFLOW,REALIZED,EUR,SUPPLIER,Proveedor acero,Gasto pagado
+2026-03-05,19000,INFLOW,REALIZED,EUR,SERVICES,Logisur,Ingreso cobrado
+2026-03-20,9500,OUTFLOW,REALIZED,EUR,SUPPLIER,Proveedor logística,Gasto pagado
