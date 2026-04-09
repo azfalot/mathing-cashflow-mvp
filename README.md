@@ -1,6 +1,7 @@
 # Mathing Cashflow MVP
 
-MVP SaaS B2B para prediccion de tension de caja, riesgo de rotura y simulacion de escenarios financieros. Funciona sin APIs externas, con carga manual por CSV y arquitectura lista para futuros conectores ERP, banca y senales externas.
+Financial forecasting MVP that simulates cash flow scenarios and detects liquidity risks.
+Designed to model real-world financial uncertainty and support decision making.
 
 ## Stack
 
